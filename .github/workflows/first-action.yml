@@ -1,0 +1,17 @@
+#set the name
+name: FirstWorkFlow  
+
+#define trigger
+on: workflow_dispatch
+
+#define work to be done //uses indenation like python for owner
+jobs:
+  first-job: # job one name 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello, is anyone listening?"
+      - name: Print goodbye
+        run: echo  "Hmm, guess not."
+  
+
